@@ -1,0 +1,103 @@
+# reload skhdrc
+alt + cmd + ctrl - r : skhd -r
+
+# Launch terminal
+alt - return : open -na /Applications/kitty.app
+
+# Open file manager
+alt - e : open -na /Applications/finder.app
+
+# Launch Launcher (like Rofi/Wofi)
+alt - space : $launcher
+
+# Toggle status bar
+alt + ctrl - b : $statusBar
+
+# Screenshot
+alt + shift - s : $screenShot --region
+alt + shift - a : $screenShot --all
+
+# Lock screen
+#alt + ctrl - l : $lockScreen
+
+########################################
+
+# Close window
+# alt - w : yabai -m window --close
+
+# Toggle floating mode
+alt - t : yabai -m window --toggle float
+
+# Exit yabai
+alt + ctrl + shift - q : yabai --stop-service || yabai --start-service
+
+# Toggle window layout
+alt - i : sh ~/.config/macUtils/yabai_switch_layout_cycle.sh
+#alt - i : yabai -m space --layout bsp || yabai -m space --layout float
+
+# Toggle window fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
+
+# Move focus 
+alt - h : yabai -m window --focus west
+alt - l : yabai -m window --focus east
+alt - k : yabai -m window --focus north
+alt - j : yabai -m window --focus south
+alt - left : yabai -m window --focus west
+alt - right : yabai -m window --focus east
+alt - up : yabai -m window --focus north
+alt - down : yabai -m window --focus south
+
+# Task switching 
+ctrl - tab : yabai -m window --focus recent 
+
+# Move window 
+alt + shift - h : yabai -m window --warp west
+alt + shift - l : yabai -m window --warp east
+alt + shift - k : yabai -m window --warp north
+alt + shift - j : yabai -m window --warp south
+alt + shift - left : yabai -m window --warp west
+alt + shift - right : yabai -m window --warp east
+alt + shift - up : yabai -m window --warp north
+alt + shift - down : yabai -m window --warp south
+
+# Resize window 
+alt + ctrl - h : yabai -m window --resize left:-20:0 || yabai -m window --resize right:-20:0
+alt + ctrl - l : yabai -m window --resize left:20:0 || yabai -m window --resize right:20:0
+alt + ctrl - k : yabai -m window --resize top:0:-20 || yabai -m window --resize bottom:0:-20
+alt + ctrl - j : yabai -m window --resize top:0:20 || yabai -m window --resize bottom:0:20
+alt + ctrl - left : yabai -m window --resize left:-20:0 || yabai -m window --resize right:-20:0
+alt + ctrl - right : yabai -m window --resize left:20:0 || yabai -m window --resize right:20:0
+alt + ctrl - up : yabai -m window --resize top:0:-20 || yabai -m window --resize bottom:0:-20
+alt + ctrl - down : yabai -m window --resize top:0:20 || yabai -m window --resize bottom:0:20
+
+# Switch to previous workspace
+alt - tab : yabai -m space --focus recent
+
+# Switch to specific workspace (workspace)
+alt - 1 : yabai -m space --focus 1 || yabai -m space --create
+alt - 2 : yabai -m space --focus 2 || yabai -m space --create
+alt - 3 : yabai -m space --focus 3 || yabai -m space --create
+alt - 4 : yabai -m space --focus 4 || yabai -m space --create
+alt - 5 : yabai -m space --focus 5 || yabai -m space --create
+alt - 6 : yabai -m space --focus 6 || yabai -m space --create
+alt - 7 : yabai -m space --focus 7 || yabai -m space --create
+alt - 8 : yabai -m space --focus 8 || yabai -m space --create
+alt - 9 : yabai -m space --focus 9 || yabai -m space --create
+alt - 0 : yabai -m space --focus 10 || yabai -m space --create
+ralt - right : yabai -m space --focus next
+ralt - left : yabai -m space --focus prev
+
+# Move window to specific workspace (movetoworkspace)
+alt + shift - 1 : yabai -m window --space 1
+alt + shift - 2 : yabai -m window --space 2
+alt + shift - 3 : yabai -m window --space 3
+alt + shift - 4 : yabai -m window --space 4
+alt + shift - 5 : yabai -m window --space 5
+alt + shift - 6 : yabai -m window --space 6
+alt + shift - 7 : yabai -m window --space 7
+alt + shift - 8 : yabai -m window --space 8
+alt + shift - 9 : yabai -m window --space 9
+alt + shift - 0 : yabai -m window --space 10
+
