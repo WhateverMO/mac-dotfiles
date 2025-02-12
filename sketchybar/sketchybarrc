@@ -88,7 +88,7 @@ source "$ITEM_DIR/wifi.sh"
 #source "$ITEM_DIR/wechat.sh"
 #source "$ITEM_DIR/qq.sh"
 #source "$ITEM_DIR/weather.sh"
-#source "$ITEM_DIR/cpu.sh"
+source "$ITEM_DIR/cpu.sh"
 #source "$ITEM_DIR/headphone.sh"
 #source "$ITEM_DIR/cava.sh"
 
